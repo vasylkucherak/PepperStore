@@ -4,74 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__left-block">
-            <div class="header__logo">
-                <img src="assets/icons/logo.svg" alt="Логотип">
+    <section class="promo">
+        <header class="header">
+            <div class="header__left-block">
+                <div class="header__logo">
+                    <img src="icons/logo.svg" alt="Логотип">
+                </div>
+                <nav class="header__links">
+                    <a href="#" class="header__link">Доставка питания</a>
+                    <a href="#" class="header__link">Второй пункт</a>
+                </nav>
             </div>
-            <nav class="header__links">
-                <a href="#" class="header__link">Доставка питания</a>
-                <a href="#" class="header__link">Второй пункт</a>
-            </nav>
+            <div class="header__right-block">
+                <button class="btn btn_white" data-modal>Связаться с нами</button>
+            </div>
+        </header>
+
+        <div class="preview">
+            <div class="bgc_blue"></div>
+            <div class="container">
+                <div class="tabcontainer">
+                    <div class="tabcontent">
+                        <img src="img/tabs/vegy.jpg" alt="vegy">
+                        <div class="tabcontent__descr">
+                            Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Для людей, которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!
+                        </div>
+                    </div>
+                    <div class="tabcontent">
+                        <img src="img/tabs/elite.jpg" alt="elite">
+                        <div class="tabcontent__descr">
+                            Меню “Премиум” - мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!                                     
+                        </div>
+                    </div>
+                    <div class="tabcontent">
+                        <img src="img/tabs/post.jpg" alt="post">
+                        <div class="tabcontent__descr">
+                            Наше специальное “Постное меню” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения. Полная гармония с собой и природой в каждом элементе! Все будет Ом!                                     
+                        </div>
+                    </div>
+                    <div class="tabcontent">
+                        <img src="img/tabs/vegy.jpg" alt="vegy">
+                        <div class="tabcontent__descr">
+                            Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
+                        </div>
+                    </div>
+                    <div class="tabheader">
+                        <h3>Выберите стиль питания</h3>
+                        <div class="tabheader__items">
+                            <div class="tabheader__item tabheader__item_active">Фитнес</div>
+                            <div class="tabheader__item">Премиум</div>
+                            <div class="tabheader__item">Постное</div>
+                            <div class="tabheader__item">Сбалансированное</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview__life">Живи полной жизнью!</div>
+            </div>
         </div>
-        <div class="header__right-block">
-            <button class="btn btn_white" data-modal>Связаться с нами</button>
-        </div>
-    </header>
+    </section>
+
     <div class="sidepanel">
         <div class="sidepanel__text"><span>Социальные сети</span></div>
         <div class="sidepanel__divider"></div>
         <a href="#" class="sidepanel__icon">
-            <img src="assets/icons/instagram.svg" alt="instagram">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.7495 0L6.24951 0C2.79826 0 -0.000488281 2.79875 -0.000488281 6.25L-0.000488281 13.75C-0.000488281 17.2013 2.79826 20 6.24951 20L13.7495 20C17.2008 20 19.9995 17.2013 19.9995 13.75L19.9995 6.25C19.9995 2.79875 17.2008 0 13.7495 0ZM18.1245 13.75C18.1245 16.1625 16.162 18.125 13.7495 18.125L6.24951 18.125C3.83701 18.125 1.87451 16.1625 1.87451 13.75L1.87451 6.25C1.87451 3.8375 3.83701 1.875 6.24951 1.875L13.7495 1.875C16.162 1.875 18.1245 3.8375 18.1245 6.25L18.1245 13.75Z" fill="black"/>
+                <path d="M9.99951 5C7.23826 5 4.99951 7.23875 4.99951 10C4.99951 12.7613 7.23826 15 9.99951 15C12.7608 15 14.9995 12.7613 14.9995 10C14.9995 7.23875 12.7608 5 9.99951 5ZM9.99951 13.125C8.27701 13.125 6.87451 11.7225 6.87451 10C6.87451 8.27625 8.27701 6.875 9.99951 6.875C11.722 6.875 13.1245 8.27625 13.1245 10C13.1245 11.7225 11.722 13.125 9.99951 13.125Z" fill="black"/>
+                <path d="M15.3745 5.29123C15.7425 5.29123 16.0408 4.99295 16.0408 4.62499C16.0408 4.25703 15.7425 3.95874 15.3745 3.95874C15.0065 3.95874 14.7083 4.25703 14.7083 4.62499C14.7083 4.99295 15.0065 5.29123 15.3745 5.29123Z" fill="black"/>
+            </svg>
         </a>
         <a href="#" class="sidepanel__icon">
-            <img src="assets/icons/facebook.svg" alt="facebook">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.0698 0L2.9292 0C1.3139 0 -0.000488281 1.31439 -0.000488281 2.92969L-0.000488281 17.0703C-0.000488281 18.6856 1.3139 20 2.9292 20L8.82764 20L8.82764 12.9297L6.48389 12.9297L6.48389 9.41406L8.82764 9.41406L8.82764 7.03125C8.82764 5.09262 10.4046 3.51563 12.3433 3.51563L15.8979 3.51563L15.8979 7.03125L12.3433 7.03125L12.3433 9.41406L15.8979 9.41406L15.312 12.9297L12.3433 12.9297L12.3433 20L17.0698 20C18.6851 20 19.9995 18.6856 19.9995 17.0703L19.9995 2.92969C19.9995 1.31439 18.6851 0 17.0698 0Z" fill="black"/>
+            </svg>
         </a>
-    </div>
-
-    <div class="preview">
-        <div class="bgc_blue"></div>
-        <div class="container">
-            <div class="tabcontainer">
-                <div class="tabcontent">
-                    <img src="assets/img/tabs/vegy.jpg" alt="vegy">
-                    <div class="tabcontent__descr">
-                        Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Для людей, которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!
-                    </div>
-                </div>
-                <div class="tabcontent">
-                    <img src="assets/img/tabs/elite.jpg" alt="elite">
-                    <div class="tabcontent__descr">
-                        Меню “Премиум” - мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!                                     
-                    </div>
-                </div>
-                <div class="tabcontent">
-                    <img src="assets/img/tabs/post.jpg" alt="post">
-                    <div class="tabcontent__descr">
-                        Наше специальное “Постное меню” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения. Полная гармония с собой и природой в каждом элементе! Все будет Ом!                                     
-                    </div>
-                </div>
-                <div class="tabcontent">
-                    <img src="assets/img/tabs/vegy.jpg" alt="vegy">
-                    <div class="tabcontent__descr">
-                        Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
-                    </div>
-                </div>
-                <div class="tabheader">
-                    <h3>Выберите стиль питания</h3>
-                    <div class="tabheader__items">
-                        <div class="tabheader__item tabheader__item_active">Фитнес</div>
-                        <div class="tabheader__item">Премиум</div>
-                        <div class="tabheader__item">Постное</div>
-                        <div class="tabheader__item">Сбалансированное</div>
-                    </div>
-                </div>
-            </div>
-            <div class="preview__life">Живи полной жизнью!</div>
-        </div>
     </div>
 
     <div class="divider"></div>
@@ -103,28 +112,28 @@
             <div class="offer__slider">
                 <div class="offer__slider-counter">
                     <div class="offer__slider-prev">
-                        <img src="assets/icons/left.svg" alt="prev">
+                        <img src="icons/left.svg" alt="prev">
                     </div>
                     <span id="current">03</span>
                     /
                     <span id="total">04</span>
                     <div class="offer__slider-next">
-                        <img src="assets/icons/right.svg" alt="next">
+                        <img src="icons/right.svg" alt="next">
                     </div>
                 </div>
                 <div class="offer__slider-wrapper">
                     <div class="offer__slider-inner">
                         <div class="offer__slide">
-                            <img src="assets/img/slider/pepper.jpg" alt="pepper">
+                            <img src="img/slider/pepper.jpg" alt="pepper">
                         </div>
                         <div class="offer__slide">
-                            <img src="assets/img/slider/food-12.jpg" alt="food">
+                            <img src="img/slider/food-12.jpg" alt="food">
                         </div>
                         <div class="offer__slide">
-                            <img src="assets/img/slider/olive-oil.jpg" alt="oil">
+                            <img src="img/slider/olive-oil.jpg" alt="oil">
                         </div>
                         <div class="offer__slide">
-                            <img src="assets/img/slider/paprika.jpg" alt="paprika">
+                            <img src="img/slider/paprika.jpg" alt="paprika">
                         </div>
                     </div>
                 </div>
@@ -198,7 +207,7 @@
             <form action="#" class="order__form">
                 <input required placeholder="Ваше имя" name="name" type="text" class="order__input">
                 <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="order__input">
-                <img src="assets/icons/right.svg" alt="right">
+                <img src="icons/right.svg" alt="right">
                 <button class="btn btn_dark btn_min">Перезвонить мне</button>
             </form>
         </div>
@@ -250,7 +259,7 @@
                 <a href="#" class="link">facebook</a>
             </div>
             <div class="pepper">
-                <img src="assets/icons/veg.svg" alt="pepper">
+                <img src="icons/veg.svg" alt="pepper">
             </div>
             <div class="call">
                 <div class="subtitle">Или позвоните нам</div>
@@ -273,6 +282,6 @@
             </div>
         </div>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/bundle.js"></script>
 </body>
 </html>
