@@ -203,7 +203,6 @@ a {
 .tabheader__items {
     margin-top: 35px;
     padding-left: 26px;
-    border-left: 1px solid #000
 }
 
 .tabheader__item {
@@ -213,7 +212,7 @@ a {
     margin-top: 10px;
     color: rgba(0, 0, 0, .6);
     cursor: pointer;
-    transition: .3s all
+    transition: .3s all;
 }
 
 .tabheader__item_active {
@@ -958,6 +957,14 @@ a {
         width: 350px;
         font-size: 19px;
     }
+    .preview__life {
+        margin-top: 45px;
+    }
+    .offer {
+        margin-top: 30px;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
     .offer .container {
         flex-wrap: wrap;
     }
@@ -971,14 +978,20 @@ a {
         width: 550px;
     }
     .offer__slider {
+        margin-top: 20px;
         order: 1;
     }
     .offer__advantages {
+        margin-top: 30px;
         order: 2;
         width: 550px;
     }
     .offer__advantages h2:first-child {
         margin-top: 0;
+    }
+    .calculating {
+        padding-top: 40px;
+        padding-bottom: 0;
     }
     .calculating__choose_big {
         width: 540px;
@@ -996,6 +1009,11 @@ a {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .menu__field {
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
     .menu__item {
         width: 460px;
         margin: 10px;
@@ -1010,8 +1028,17 @@ a {
     .title {
         font-size: 22px;
     }
+    .order {
+        padding-bottom: 40px;
+    }
     .order__input {
         width: 135px;
+    }
+    .order__form {
+        margin-top: 40px;
+    }
+    .promotion {
+        padding: 40px 0;
     }
     .promotion .container {
         flex-direction: column;
@@ -1024,7 +1051,7 @@ a {
         text-align: center;
     }
     .promotion__descr {
-        margin-top: 20px;
+        margin-top: 30px;
         font-size: 16px;
         line-height: 22px;
     }
@@ -1037,7 +1064,7 @@ a {
         text-align: center;
     }
     .promotion__timer .timer {
-        margin-top: 20px;
+        margin-top: 30px;
         padding-left: 0;
     }
     .promotion__timer .timer__block {
@@ -1054,6 +1081,10 @@ a {
         height: 30px;
         margin-top: 5px;
     }
+    .header__logo {
+        width: 100px;
+        height: 40px;
+    }
     .header__left-block {
         width: 222px;
     }
@@ -1061,20 +1092,22 @@ a {
         font-size: 10px;
         margin-right: 10px;
     }
-    .pepper {
+    .header .pepper {
         height: 30px;
         width: 80px;
+        margin: 0;
+        margin-top: 5px;
     }
-    .pepper span{
+    .header .pepper span{
         font-size: 11px;
     }
-    .pepper a{
+    .header .pepper a{
         height: 30px;
     }
-    .pepper svg{
+    .header .pepper svg{
         height: 30px;
     }
-    .btn {
+    .header .btn {
         padding: 0 5px;
         width: 80px;
         height: 30px;
@@ -1099,7 +1132,7 @@ a {
         order: 1;
     }
     .tabheader h3 {
-        font-size: 12px;
+        font-size: 13px;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -1128,14 +1161,191 @@ a {
         padding: 6px;
     }
     .preview {
+        padding-top: 5px;
         padding-bottom: 0;
     }
     .preview__life {
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: 0;
         text-align: center;
+        font-size: 16px;
     }
     .divider {
         width: 310px;
     }
+    .offer {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .offer .container {
+        justify-content: center;
+    }
+    .offer__text {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .offer__descr {
+        width: 300px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .offer .btn.btn_dark {
+        width: 140px;
+        height: 40px;
+    }
+    .title {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .offer {
+        padding: 20px 0;
+    }
+    .offer .btn {
+        width: 120px;
+    }
+    .offer__descr {
+        margin-top: 20px;
+    }
+    .offer__slider {
+        margin-top: 20px;
+        width: 300px;
+        height: 280px;
+    }
+    .offer__slider-counter {
+        width: 150px;
+    }
+    .offer__slider-prev {
+        margin-right: 5px;
+    }
+    .offer__slider-next {
+        margin-left: 5px;
+    }
+    .offer__slider #current {
+        font-size: 30px;
+    }
+    .offer__slider #total {
+        font-size: 18px;
+    }
+    .offer__advantages {
+        margin-top: 20px;
+        width: 300px;
+    }
+    .offer__advantages h2 {
+        font-size: 16px;
+    }
+    .offer__advantages-text {
+        font-size: 14px;
+    }
+    .calculating {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .calculating__field {
+        margin-top: 20px;
+    }
+    .calculating__choose_medium, .calculating__choose_big {
+        width: 310px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #low, #small, #medium, #high {
+        width: 180px;
+    }
+    .calculating__choose-item {
+        margin-bottom: 5px;
+    }
+    .divider, .calculating__divider {
+        width: 300px;
+    }
+    .calculating__total {
+        width: 300px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .calculating__subtitle {
+        font-size: 14px;
+    }
+    .menu {
+        padding: 0;
+        margin-top: 20px;
+    }
+    .menu__field {
+        margin-top: 0;
+        padding: 5px 0;
+    }
+    .menu__item {
+        width: 280px;
+        min-height: 410px;
+    }
+    .menu__item-price {
+        width: 280px;
+    }
+    .menu .title {
+        margin-bottom: 20px;
+    }
+    .order {
+        padding: 20px 0;
+    }
+    .order__form {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .order__form img, .order__form input, .order__form button {
+        margin: 10px 0;
+    }
+    .order__input {
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .btn.btn_dark.btn_min {
+        width: 180px;
+        height: 40px;
+    }
+    .promotion {
+        padding: 20px 0 30px 0;
+    }
+    .promotion__text, .promotion__timer {
+        width: 300px;
+    }
+    .promotion__descr {
+        font-size: 14px;
+        text-align: center;
+    }
+    .promotion__timer .timer__block {
+        width: 70px;
+        height: 90px;
+    }
+    .promotion__timer .timer__block span {
+        font-size: 50px;
+        margin-top: 5px;
+    }
+    .footer {
+        padding-bottom: 30px;
+    }
+    .footer .container {
+        width: 300px;
+        flex-wrap: wrap;
+    }
+    .pepper {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        order: 3;
+        margin-top: 20px;
+    }
+    .social {
+        width: 150px;
+        order: 1;
+    }
+    .call {
+        width: 150px;
+        order: 2;
+    }
+    .footer .subtitle {
+        font-size: 17px;
+    }
+    
 }
