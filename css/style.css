@@ -47,7 +47,7 @@ a {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1160px;
     margin: 0 auto
 }
 
@@ -151,9 +151,9 @@ a {
     right: 0;
     top: -155px;
     width: 50vw;
-    height: 900px;
+    height: 100vh;
     background: rgba(146, 242, 255, .15);
-    z-index: -1
+    z-index: -10
 }
 
 .tabcontainer {
@@ -810,6 +810,37 @@ a {
         line-height: 30px;
         padding: 10px 25px;
     }
+    .offer .bgc_y {
+        width: 100vw; 
+    }
+    .menu__item {
+        width: 300px;
+        position: relative;
+        min-height: 470px;
+    }
+    .menu__item-divider{
+        position: absolute;
+        bottom: 49px;
+        left: 0;
+    }
+    .menu__item-price {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 300px;
+    }
+    .order__form {
+        padding: 0 42px;
+    }
+    .promotion__timer .timer {
+        padding-left: 10px;
+    }
+    element.style {
+        width: 650px;
+    }
+    .offer__slider {
+        width: 620px;
+    }
 }
 
 @media (max-width: 1080px){
@@ -912,7 +943,7 @@ a {
         font-size: 10px;
     }
     .bgc_blue {
-        height: 680px;
+        height: 600px;
     }
     .promo {
         height: 550px;
