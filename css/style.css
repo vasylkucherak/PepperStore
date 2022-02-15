@@ -875,6 +875,58 @@ a {
         font-size: 19px;
         line-height: 27px;
     }
+    .title {
+        font-size: 26px;
+    }
+    .offer__descr {
+        width: 520px;
+    }
+    .offer__advantages {
+        width: 280px;
+    }
+    .offer__slider {
+        width: 440px;
+    }
+    .calculating__choose_medium {
+        width: 620px;
+    }
+    .calculating__choose_big {
+        width: 690px;
+    }
+    .calculating__choose-item, .calculating__choose_big .calculating__choose-item {
+        width: 148px;
+    }
+    .menu__item {
+        width: 235px;
+    }
+    .menu__item img {
+        height: 160px;
+    }
+    .menu__item-subtitle, .menu__item-descr {
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .menu__item-price {
+        width: 235px;
+    }
+    .order__form {
+        padding: 0;
+    }
+    .order__input {
+        width: 210px;
+    }
+    .promotion {
+        padding-bottom: 100px;
+    }
+    .promotion__timer .timer__block {
+        width: 80px;
+        height: 100px;
+    }
+    .promotion__timer .timer__block span {
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
 }
 
 @media (max-width: 767px) {
