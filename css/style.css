@@ -71,14 +71,17 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 50px;
+    width: 1130px;
+    margin: 0 auto;
     margin-top: 10px;
-    padding: 0 100px
+    padding: 0;
 }
 
 .header__left-block {
     display: flex;
     justify-content: space-between;
-    min-width: 550px
+    width: 697px;
+    min-width: 0;
 }
 
 .header__logo {
@@ -174,15 +177,15 @@ a {
 
 .tabcontent__descr {
     position: absolute;
-    top: calc(45vh - 60px);
+    bottom: -40px;
     right: -177px;
     width: 550px;
-    height: 50vh;
+    height: 40vh;
     background: rgba(251, 254, 93, .8);
-    padding: 40px;
+    padding: 10px 30px;
     font-size: 24px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 33px;
     color: rgba(0, 0, 0, .7)
 }
 
@@ -769,5 +772,201 @@ a {
 
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 1260px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container, .header {
+        width: 950px;
+    }
+    .sidepanel {
+        display: flex;
+    }
+    .header__left-block {
+        width: 608px;
+    }
+    .tabcontainer {
+        width: 100%;
+    }
+    .tabcontent {
+        width: 100%;
+    }
+    .tabheader h3{
+        font-size: 15px;
+    }
+    .btn {
+        width: 200px;
+        font-size: 17px;
+    }
+    .tabcontent__descr {
+        width: 450px;
+        font-size: 21px;
+        line-height: 30px;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 1080px){
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .container, .header {
+        width: 730px;
+    }
+    .header__left-block {
+        width: 497px;
+    }
+    .btn {
+        width: 180px;
+        font-size: 16px;
+    }
+    .tabheader {
+        width: 280px;
+        padding: 35px 10px;
+    }
+    .tabheader__items {
+        padding-left: 10px;
+    }
+    .tabheader__item_active {
+        font-size: 18px;
+    }
+    .tabcontent__descr {
+        width: 400px;
+        font-size: 19px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container, .header {
+        width: 550px;
+    }
+    .header__left-block {
+        width: 392px;
+    }
+    .header__link {
+        font-size: 16px;
+    }
+    .btn {
+        width: 140px;
+        font-size: 14px;
+    }
+    .tabheader {
+        width: 280px;
+        padding: 35px 10px;
+    }
+    .tabheader__items {
+        padding-left: 10px;
+        margin: 0;
+    }
+    .tabheader__item_active {
+        font-size: 18px;
+    }
+    .tabcontent__descr {
+        width: 350px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container, .header {
+        width: 310px;
+    }
+    .header {
+        height: 30px;
+        margin-top: 5px;
+    }
+    .header__left-block {
+        width: 222px;
+    }
+    .header__link {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    .pepper {
+        height: 30px;
+        width: 80px;
+    }
+    .pepper span{
+        font-size: 11px;
+    }
+    .pepper a{
+        height: 30px;
+    }
+    .pepper svg{
+        height: 30px;
+    }
+    .btn {
+        padding: 0 5px;
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .bgc_blue {
+        height: 680px;
+    }
+    .promo {
+        height: 550px;
+    }
+    .tabcontainer {
+        flex-direction: column;
+        height: 460px
+    }
+    .tabcontainer img {
+        height: 300px
+    }
+    .tabheader {
+        width: 310px;
+        padding: 10px 5px;
+        order: 1;
+    }
+    .tabheader h3 {
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .tabheader__items {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 2px;
+        margin: 0;
+    }
+    .tabheader__item, .tabheader__item_active {
+        display: inline-block;
+        font-size: 10px;
+        line-height: 14px;
+        margin: 0;
+    }
+    .tabcontent {
+        order: 2;
+        width: 310px;
+    }
+    .tabcontent__descr {
+        position: static;
+        width: 310px;
+        height: 100px;
+        line-height: 16px;
+        font-size: 12px;
+        padding: 6px;
+    }
+    .preview {
+        padding-bottom: 0;
+    }
+    .preview__life {
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .divider {
+        width: 310px;
     }
 }
